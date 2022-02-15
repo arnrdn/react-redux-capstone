@@ -1,13 +1,9 @@
-const Home = () => {
-  const hello = 'hi';
+import HomeList from './HomeList';
 
-  return (
-    <div>
-      <p>
-        {hello}
-      </p>
-    </div>
-  );
-};
+const Home = () => (
+  <div>
+    <HomeList />
+  </div>
+);
 
 export default Home;
