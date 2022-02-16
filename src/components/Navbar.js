@@ -8,11 +8,11 @@ const Navbar = (props) => {
   return (
     <div className="navbar">
       <div className="navbar-content">
-        <div className="back">
-          <Link to="/">
+        <Link to="/">
+          <div className="back">
             <FontAwesomeIcon icon={faAngleLeft} />
-          </Link>
-        </div>
+          </div>
+        </Link>
         {home
         && (
           <div className="name">

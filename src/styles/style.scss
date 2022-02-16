@@ -1,0 +1,61 @@
+@import './_variables';
+@import './_navbar';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: rgb(12, 12, 12);
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    'Roboto',
+    'Oxygen',
+    'Ubuntu',
+    'Cantarell',
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.App {
+  position: relative;
+  &::before {
+    content: ' ';
+    width: 275px;
+    height: 200px;
+    background-color: rgba(121, 33, 148, 0.829);
+    border-radius: 50%;
+    filter: blur(150px);
+    top: 0px;
+    right: 0px;
+    z-index: -1;
+    position: absolute;
+  }
+  &::after {
+    content: ' ';
+    width: 300px;
+    height: 200px;
+    background-color: rgba(17, 107, 103, 0.384);
+    border-radius: 50%;
+    filter: blur(110px);
+    top: 0px;
+    right: 300px;
+    z-index: -1;
+    position: absolute;
+  }
+}
+
