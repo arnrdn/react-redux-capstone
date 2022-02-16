@@ -1,13 +1,12 @@
-import { useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import { useEffect, useState } from 'react';
+import { useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
-// import { fetchDetailsApi } from '../redux/details/details';
+import PropTypes from 'prop-types';
 import { fetchStockApi } from '../redux/home/home';
 import HomeCard from './HomeCard';
 
-const HomeList = () => {
-  const actives = useSelector((state) => state.homeReducer.home);
-
+const HomeList = ({ actives }) => {
+  const [searchValue, setSearchValue] = useState('');
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -16,23 +15,39 @@ const HomeList = () => {
     }
   }, []);
 
-  const handleClick = (e) => {
-    console.log(e.parentElement.payload);
-  };
+  const filtered = actives.filter((active) => active.companyName
+    .toLowerCase()
+    .includes(searchValue.toLowerCase().trim()));
 
-  const list = actives.map((active) => (
-    <Link payload={active.ticker} key={active.id} to={`/details/${active.ticker}`} onClick={(e) => handleClick(e)}>
-      <HomeCard active={active} />
+  const finalList = filtered.map((item) => (
+    <Link
+      id={item.ticker}
+      key={item.id}
+      to={`/details/${item.ticker}`}
+    >
+      <HomeCard
+        active={item}
+      />
     </Link>
   ));
 
   return (
     <div>
+      <div>
+        <form>
+          <input type="text" placeholder="Search..." onChange={(e) => setSearchValue(e.target.value)} value={searchValue} />
+          <button type="button">Find</button>
+        </form>
+      </div>
       <ul className="stock-list">
-        {list}
+        {finalList}
       </ul>
     </div>
   );
 };
+
+HomeList.propTypes = {
+  actives: PropTypes.array,
+}.isRequired;
 
 export default HomeList;

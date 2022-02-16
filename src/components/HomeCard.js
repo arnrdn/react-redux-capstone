@@ -24,10 +24,10 @@ const HomeCard = (props) => {
 
 HomeCard.propTypes = {
   active: PropTypes.shape({
-    id: PropTypes.number,
+    id: PropTypes.string,
     companyName: PropTypes.string,
     changes: PropTypes.number,
-    price: PropTypes.number,
+    price: PropTypes.string,
     ticker: PropTypes.string,
   }).isRequired,
 };

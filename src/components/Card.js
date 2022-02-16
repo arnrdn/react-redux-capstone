@@ -26,10 +26,10 @@ const Card = (props) => {
 
 Card.propTypes = {
   detail: PropTypes.shape({
-    id: PropTypes.number,
-    calendarYear: PropTypes.number,
-    fillingDate: PropTypes.number,
-    acceptedDate: PropTypes.number,
+    id: PropTypes.string,
+    calendarYear: PropTypes.string,
+    fillingDate: PropTypes.string,
+    acceptedDate: PropTypes.string,
     symbol: PropTypes.string,
     netIncome: PropTypes.number,
   }).isRequired,

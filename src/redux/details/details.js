@@ -6,15 +6,15 @@ export const initialDetailsState = {
   details: [],
 };
 
-const key = '55297d94cff821234f760f639c8abb1a';
+const key = 'f6218dad261945cd7da0a9f3a10a7b8c';
 
 export const fetchDetails = (payload) => ({
   type: FETCH_DETAILS,
   payload,
 });
 
-export const fetchDetailsApi = (payload) => async (dispatch) => {
-  const information = await Axios.get(`https://financialmodelingprep.com/api/v3/income-statement/${payload}?limit=120&apikey=${key}`);
+export const fetchDetailsApi = (props) => async (dispatch) => {
+  const information = await Axios.get(`https://financialmodelingprep.com/api/v3/income-statement/${props.symbol}?limit=120&apikey=${key}`);
   const sortedInfo = Object.entries(information.data).map(([id, info]) => {
     const {
       calendarYear, symbol, fillingDate, acceptedDate, netIncome,

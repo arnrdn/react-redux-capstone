@@ -6,7 +6,7 @@ const initialHomeState = {
   home: [],
 };
 
-const key = '55297d94cff821234f760f639c8abb1a';
+const key = 'f6218dad261945cd7da0a9f3a10a7b8c';
 
 export const fetchData = (payload) => ({
   type: FETCH_DATA,

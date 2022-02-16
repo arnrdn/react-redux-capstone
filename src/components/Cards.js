@@ -1,28 +1,29 @@
-import { useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import PropTypes from 'prop-types';
 import Card from './Card';
-import { fetchDetailsApi } from '../redux/details/details';
 
-const Cards = () => {
-  const details = useSelector((state) => state.detailsReducer.details);
+const Cards = (props) => {
+  const { symbol, details } = props;
 
-  const dispatch = useDispatch();
-
-  useEffect(() => {
-    if (details.length === 0) {
-      dispatch(fetchDetailsApi());
-    }
-  }, []);
-
-  const detailsList = details.map((detail) => (<Card key={detail.id} detail={detail} />));
+  const detList = details.map((detail) => (
+    <Card
+      id={symbol}
+      key={detail.id}
+      detail={detail}
+    />
+  ));
 
   return (
     <div>
       <ul>
-        {detailsList}
+        {detList}
       </ul>
     </div>
   );
 };
+
+Cards.propTypes = {
+  symbol: PropTypes.string,
+  details: PropTypes.array,
+}.isRequired;
 
 export default Cards;
