@@ -1,11 +1,14 @@
+import { useSelector } from 'react-redux';
+import HomeList from './HomeList';
+import Navbar from './Navbar';
+
 const Home = () => {
-  const hello = 'hi';
+  const actives = useSelector((state) => state.homeReducer.home);
 
   return (
     <div>
-      <p>
-        {hello}
-      </p>
+      <Navbar home />
+      <HomeList actives={actives} />
     </div>
   );
 };
