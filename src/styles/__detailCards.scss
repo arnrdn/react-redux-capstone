@@ -1,0 +1,19 @@
+.cards-list {
+  color: $white;
+  margin: 0 20px;
+
+  .card-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    box-sizing: border-box;
+    align-items: center;
+    background-color: rgba(22, 22, 22, 0.4);
+    margin-top: 15px;
+    padding: 1rem;
+
+    .year {
+      font-weight: 700;
+      font-size: 1.25rem;
+    }
+  }
+}
