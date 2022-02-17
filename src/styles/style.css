@@ -226,6 +226,7 @@ a {
 }
 
 .detail-name {
+  font-size: 1.1rem;
   display: -webkit-box;
   display: flex;
   -webkit-box-align: center;
@@ -349,4 +350,20 @@ body {
   right: 300px;
   z-index: -1;
   position: absolute;
+}
+
+@media (max-width: 440px) {
+  .stock-list {
+    grid-template-columns: 1fr;
+  }
+
+  .cards-list .card-item {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 15px;
+  }
+
+  .detail-name {
+    font-size: 0.7rem;
+  }
 }

@@ -1,14 +1,11 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Bookstore
+# Stocks
 
-> It is an app you can use to store your favorite books! You can update them and delete them afterward. All of the books are stored in the [Bookstore API](https://www.notion.so/Bookstore-API-51ea269061f849118c65c0a53e88a739)!
+> It is an app built using React&Redux and [Financial modeling prep API](https://site.financialmodelingprep.com/developer/docs)! You can see data and metrics from companies' stocks and search for a certain company!
 
 <p align="center">
-  <img src="./src/img/app-screenshot.png" width="600px">
-</p>
-<p align="center">
-  <img src="./src/img/ui.gif" width="600px">
+  <img src="./src/img/demo.gif" width="390">
 </p>
 
 
@@ -18,12 +15,16 @@
 - SASS
 - React
 - Font Awesome
-- [Bookstore API](https://www.notion.so/Bookstore-API-51ea269061f849118c65c0a53e88a739)
+- [Financial modeling prep API](https://site.financialmodelingprep.com/developer/docs)
+- SVG illustrations from [unDraw](https://undraw.co/)
 
 ## Live Demo
 
-- [Click here to see a live version on Netlify!](https://modest-easley-404161.netlify.app)
-- [Click here to see a live version on Heroku!](https://bookstore-rdnrn.herokuapp.com/)
+- [Click here to see a live version on Netlify!](https://peaceful-elion-dffb9b.netlify.app)
+
+## Video presentation
+
+- [Click here to see my video about this project!](https://www.loom.com/share/09b0c650b1d247cab77e4167a0104bd3)
 
 ## Getting Started
 
@@ -73,7 +74,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 Contributions, issues, and feature requests are welcome!
 
-[You can leave them here!](https://github.com/rdnrn/mathmagicians/issues)
+[You can leave them here!](https://github.com/rdnrn/react-redux-capstone/issues)
 
 ## Show your support
 
