@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import { fetchStockApi } from '../redux/home/home';
 import HomeCard from './HomeCard';
 
@@ -32,11 +34,14 @@ const HomeList = ({ actives }) => {
   ));
 
   return (
-    <div>
-      <div>
-        <form>
-          <input type="text" placeholder="Search..." onChange={(e) => setSearchValue(e.target.value)} value={searchValue} />
-          <button type="button">Find</button>
+    <div className="home-list">
+      <div className="search-form-container">
+        <form className="search-form">
+          <input className="search search-input" type="text" placeholder="Search..." onChange={(e) => setSearchValue(e.target.value)} value={searchValue} />
+          <button className="search search-btn" type="button">
+            <FontAwesomeIcon className="s-icon" icon={faMagnifyingGlass} />
+            <span className="dot">.</span>
+          </button>
         </form>
       </div>
       <ul className="stock-list">

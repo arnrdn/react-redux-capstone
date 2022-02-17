@@ -1,6 +1,6 @@
 import Axios from 'axios';
 
-const FETCH_DATA = 'FETCH_DATA';
+const FETCH_DATA = 'react-redux-capstone/home/FETCH_DATA';
 
 const initialHomeState = {
   home: [],

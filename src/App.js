@@ -4,10 +4,12 @@ import Details from './components/Details';
 
 const App = () => (
   <div className="App">
-    <Routes>
-      <Route exact path="/" element={<Home />} />
-      <Route path="/details/:symbol" element={<Details />} />
-    </Routes>
+    <div className="main-container">
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route path="/details/:symbol" element={<Details />} />
+      </Routes>
+    </div>
   </div>
 );
 
