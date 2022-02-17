@@ -17,6 +17,8 @@
 - Font Awesome
 - [Financial modeling prep API](https://site.financialmodelingprep.com/developer/docs)
 - SVG illustrations from [unDraw](https://undraw.co/)
+- React Spring
+- [This design guideline](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs))
 
 ## Live Demo
 
