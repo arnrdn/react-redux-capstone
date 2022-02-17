@@ -1,0 +1,78 @@
+.search-form {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 8fr 1.5fr;
+}
+
+.search {
+  background-color: rgba(22, 22, 22, 0.4);
+  border: none;
+  color: $white;
+  padding: 0.9rem;
+}
+
+.search-input {
+  font-size: 0.9rem;
+
+  &::placeholder {
+    color: $white;
+  }
+}
+
+.search-btn {
+  width: 100%;
+
+  .s-icon {
+    height: 20px;
+  }
+
+  span {
+    display: none;
+  }
+}
+
+.stock-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 1rem 10px;
+
+  li {
+    box-sizing: border-box;
+    background-color: rgba(22, 22, 22, 0.4);
+    height: 100%;
+    padding: 1rem;
+    color: $white;
+    transition: all 1ms ease-in-out;
+
+    &:active {
+      transform: scale(0.95);
+    }
+
+    .arrow {
+      width: 10px;
+      margin-right: 5px;
+    }
+  }
+}
+
+.name {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 30px;
+
+  h2 {
+    font-size: 1.1rem;
+  }
+
+  span {
+    @include symbol;
+  }
+}
+
+.finance-stuff {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
