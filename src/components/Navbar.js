@@ -16,7 +16,7 @@ const Navbar = (props) => {
         {home
         && (
           <div className="name">
-            Stock Companies
+            Stocks
           </div>
         )}
         {!home

@@ -33,12 +33,16 @@ const HomeList = ({ actives }) => {
     </Link>
   ));
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <div className="home-list">
       <div className="search-form-container">
-        <form className="search-form">
+        <form className="search-form" onSubmit={handleSubmit}>
           <input className="search search-input" type="text" placeholder="Search..." onChange={(e) => setSearchValue(e.target.value)} value={searchValue} />
-          <button className="search search-btn" type="button">
+          <button className="search search-btn" type="submit">
             <FontAwesomeIcon className="s-icon" icon={faMagnifyingGlass} />
             <span className="dot">.</span>
           </button>
