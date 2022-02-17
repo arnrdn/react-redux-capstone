@@ -11,11 +11,11 @@ Object {
         <div
           class="navbar-content"
         >
-          <div
-            class="back"
+          <a
+            href="/"
           >
-            <a
-              href="/"
+            <div
+              class="back"
             >
               <svg
                 aria-hidden="true"
@@ -32,8 +32,8 @@ Object {
                   fill="currentColor"
                 />
               </svg>
-            </a>
-          </div>
+            </div>
+          </a>
           <div
             class="name"
           >
@@ -84,11 +84,11 @@ Object {
       <div
         class="navbar-content"
       >
-        <div
-          class="back"
+        <a
+          href="/"
         >
-          <a
-            href="/"
+          <div
+            class="back"
           >
             <svg
               aria-hidden="true"
@@ -105,8 +105,8 @@ Object {
                 fill="currentColor"
               />
             </svg>
-          </a>
-        </div>
+          </div>
+        </a>
         <div
           class="name"
         >

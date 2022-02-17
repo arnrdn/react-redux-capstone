@@ -1,7 +1,7 @@
 import { useSelector } from 'react-redux';
 import HomeList from './HomeList';
 import Navbar from './Navbar';
-import Header from './Header';
+import Hero from './Hero';
 
 const Home = () => {
   const actives = useSelector((state) => state.homeReducer.home);
@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <div>
       <Navbar home />
-      <Header actives={actives} />
+      <Hero />
       <HomeList actives={actives} />
     </div>
   );

@@ -1,0 +1,37 @@
+.hero {
+  position: relative;
+  &::before {
+    content: ' ';
+    width: 100px;
+    height: 100px;
+    background-color: $violet;
+    top: 90%;
+    left: 0px;
+    border-radius: 50%;
+    filter: blur(70px);
+    z-index: -1;
+    position: absolute;
+  }
+  &::after {
+    content: ' ';
+    width: 150px;
+    height: 150px;
+    background-color: $cyan;
+    top: 150%;
+    right: 0px;
+    border-radius: 50%;
+    filter: blur(100px);
+    z-index: -1;
+    position: absolute;
+  }
+}
+
+.hero-content {
+  display: flex;
+}
+
+.hero-img {
+  margin: 2rem auto;
+  height: 300px;
+  width: 100vw;
+}

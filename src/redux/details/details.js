@@ -1,6 +1,6 @@
 import Axios from 'axios';
 
-const FETCH_DETAILS = 'FETCH_DETAILS';
+const FETCH_DETAILS = 'react-redux-capstone/details/FETCH_DETAILS';
 
 export const initialDetailsState = {
   details: [],

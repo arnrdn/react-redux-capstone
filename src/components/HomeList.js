@@ -34,12 +34,12 @@ const HomeList = ({ actives }) => {
   ));
 
   return (
-    <div>
-      <div>
-        <form>
-          <input type="text" placeholder="Search..." onChange={(e) => setSearchValue(e.target.value)} value={searchValue} />
-          <button type="button">
-            <FontAwesomeIcon icon={faMagnifyingGlass} />
+    <div className="home-list">
+      <div className="search-form-container">
+        <form className="search-form">
+          <input className="search search-input" type="text" placeholder="Search..." onChange={(e) => setSearchValue(e.target.value)} value={searchValue} />
+          <button className="search search-btn" type="button">
+            <FontAwesomeIcon className="s-icon" icon={faMagnifyingGlass} />
             <span className="dot">.</span>
           </button>
         </form>
