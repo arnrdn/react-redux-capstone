@@ -13,6 +13,7 @@
 
 .search-input {
   font-size: 0.9rem;
+
   &::placeholder {
     color: $white;
   }
@@ -20,9 +21,11 @@
 
 .search-btn {
   width: 100%;
+
   .s-icon {
     height: 20px;
   }
+
   span {
     display: none;
   }
@@ -33,6 +36,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 10px;
   margin: 1rem 10px;
+
   li {
     box-sizing: border-box;
     background-color: rgba(22, 22, 22, 0.4);
@@ -40,9 +44,11 @@
     padding: 1rem;
     color: $white;
     transition: all 1ms ease-in-out;
+
     &:active {
-      transform: scale(95%);
+      transform: scale(0.95);
     }
+
     .arrow {
       width: 10px;
       margin-right: 5px;
@@ -55,15 +61,14 @@
   justify-content: space-between;
   align-items: flex-start;
   margin-bottom: 30px;
+
   h2 {
-      font-size: 1.1rem;
-    }
-    span {
-      background-color: rgba(255, 255, 255, 0.089);
-      padding: 0.4rem;
-      border-radius: 10px;
-      margin: 5px;
-    }
+    font-size: 1.1rem;
+  }
+
+  span {
+    @include symbol;
+  }
 }
 
 .finance-stuff {

@@ -3,6 +3,8 @@
 @import './_hero';
 @import './_homeList';
 @import './_detailHero';
+@import './_detailCards';
+@import './_noInfo';
 
 * {
   margin: 0;
@@ -40,6 +42,7 @@ body {
 
 .App {
   position: relative;
+
   &::before {
     content: ' ';
     width: 275px;
@@ -47,11 +50,12 @@ body {
     background-color: $violet;
     border-radius: 50%;
     filter: blur(150px);
-    top: 0px;
-    right: 0px;
+    top: 0;
+    right: 0;
     z-index: -1;
     position: absolute;
   }
+
   &::after {
     content: ' ';
     width: 300px;
@@ -59,10 +63,9 @@ body {
     background-color: $cyan;
     border-radius: 50%;
     filter: blur(110px);
-    top: 0px;
+    top: 0;
     right: 300px;
     z-index: -1;
     position: absolute;
   }
 }
-

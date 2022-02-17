@@ -30,11 +30,7 @@ const Details = () => {
         price={filteredActives.price}
         changes={filteredActives.changes}
       />
-      <p>
-        Here we should see the right page lol
-        {symbol}
-      </p>
-      <Cards symbol={symbol} details={details} />
+      <Cards showDetails symbol={symbol} details={details} />
     </div>
   );
 };

@@ -1,11 +1,13 @@
 .hero-detail {
   padding: 1rem 3rem;
   color: $white;
+
   .hero-content-detail {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
     align-items: center;
+
     .hero-img {
       height: 200px;
       width: 50%;
@@ -16,5 +18,23 @@
 .detail-name {
   display: flex;
   align-items: center;
+
+  span {
+    @include symbol;
+
+    margin-left: 20px;
+  }
 }
 
+.detail-hero-finance {
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .changes {
+    .arrow {
+      margin-right: 7px;
+    }
+  }
+}

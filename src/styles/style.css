@@ -6,14 +6,13 @@
 
 .navbar-content {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .navbar-content .back {
@@ -21,13 +20,29 @@
   height: 30px;
 }
 
+.name {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
 .navbar-content .name {
   font-weight: 600;
   text-transform: uppercase;
   margin: 0;
   letter-spacing: 2px;
-  -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
-          box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+  -webkit-box-shadow: 0 5px 10px 2px rgba(34, 60, 80, 0.2);
+  box-shadow: 0 5px 10px 2px rgba(34, 60, 80, 0.2);
+}
+
+a {
+  text-decoration: none;
 }
 
 .navbar-content a {
@@ -38,11 +53,10 @@
 .navbar-content .adds {
   width: 15%;
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .hero {
@@ -55,10 +69,10 @@
   height: 100px;
   background-color: rgba(121, 33, 148, 0.829);
   top: 90%;
-  left: 0px;
+  left: 0;
   border-radius: 50%;
   -webkit-filter: blur(70px);
-          filter: blur(70px);
+  filter: blur(70px);
   z-index: -1;
   position: absolute;
 }
@@ -69,17 +83,16 @@
   height: 150px;
   background-color: rgba(17, 107, 103, 0.384);
   top: 150%;
-  right: 0px;
+  right: 0;
   border-radius: 50%;
   -webkit-filter: blur(100px);
-          filter: blur(100px);
+  filter: blur(100px);
   z-index: -1;
   position: absolute;
 }
 
 .hero-content {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -94,7 +107,7 @@
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 8fr 1.5fr;
-      grid-template-columns: 8fr 1.5fr;
+  grid-template-columns: 8fr 1.5fr;
 }
 
 .search {
@@ -112,11 +125,11 @@
   color: #eeecec;
 }
 
-.search-input:-ms-input-placeholder {
+.search-input::-ms-input-placeholder {
   color: #eeecec;
 }
 
-.search-input::-ms-input-placeholder {
+.search-input:-ms-input-placeholder {
   color: #eeecec;
 }
 
@@ -140,14 +153,14 @@
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 10px;
   margin: 1rem 10px;
 }
 
 .stock-list li {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   background-color: rgba(22, 22, 22, 0.4);
   height: 100%;
   padding: 1rem;
@@ -157,26 +170,12 @@
 }
 
 .stock-list li:active {
-  -webkit-transform: scale(95%);
-          transform: scale(95%);
+  transform: scale(0.95);
 }
 
 .stock-list li .arrow {
   width: 10px;
   margin-right: 5px;
-}
-
-.name {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  margin-bottom: 30px;
 }
 
 .name h2 {
@@ -192,55 +191,107 @@
 
 .finance-stuff {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .hero-detail {
   padding: 1rem 3rem;
+  margin: 0 auto;
+  width: 70%;
   color: #eeecec;
 }
 
 .hero-detail .hero-content-detail {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   margin: 0 auto;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .hero-detail .hero-content-detail .hero-img {
+  margin: 0;
   height: 200px;
-  width: 50%;
+  width: 40%;
 }
 
 .detail-name {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.detail-name span {
+  background-color: rgba(255, 255, 255, 0.089);
+  padding: 0.4rem;
+  border-radius: 10px;
+  margin: 5px;
+  margin-left: 20px;
+}
+
+.detail-hero-finance {
+  margin-top: 25px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.detail-hero-finance .changes .arrow {
+  margin-right: 7px;
+}
+
+.cards-list {
+  color: #eeecec;
+  margin: 0 20px;
+}
+
+.cards-list .card-item {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: rgba(22, 22, 22, 0.4);
+  margin-top: 15px;
+  padding: 1rem;
+}
+
+.cards-list .card-item .year {
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.no-info {
+  color: #eeecec;
+  margin: 5rem;
+  text-align: center;
+  font-size: 1.5rem;
 }
 
 * {
   margin: 0;
   padding: 0;
-}
-
-a {
-  text-decoration: none;
 }
 
 ul {
@@ -252,7 +303,18 @@ body {
   height: 100%;
   width: 100%;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    'Roboto',
+    'Oxygen',
+    'Ubuntu',
+    'Cantarell',
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
+    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -268,9 +330,9 @@ body {
   background-color: rgba(121, 33, 148, 0.829);
   border-radius: 50%;
   -webkit-filter: blur(150px);
-          filter: blur(150px);
-  top: 0px;
-  right: 0px;
+  filter: blur(150px);
+  top: 0;
+  right: 0;
   z-index: -1;
   position: absolute;
 }
@@ -282,10 +344,9 @@ body {
   background-color: rgba(17, 107, 103, 0.384);
   border-radius: 50%;
   -webkit-filter: blur(110px);
-          filter: blur(110px);
-  top: 0px;
+  filter: blur(110px);
+  top: 0;
   right: 300px;
   z-index: -1;
   position: absolute;
 }
-/*# sourceMappingURL=style.css.map */

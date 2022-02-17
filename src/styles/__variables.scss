@@ -1,3 +1,10 @@
 $white: rgb(238, 236, 236);
 $violet: rgba(121, 33, 148, 0.829);
 $cyan: rgba(17, 107, 103, 0.384);
+
+@mixin symbol {
+  background-color: rgba(255, 255, 255, 0.089);
+  padding: 0.4rem;
+  border-radius: 10px;
+  margin: 5px;
+}

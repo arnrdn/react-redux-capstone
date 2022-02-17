@@ -1,24 +1,26 @@
 .hero {
   position: relative;
+
   &::before {
     content: ' ';
     width: 100px;
     height: 100px;
     background-color: $violet;
     top: 90%;
-    left: 0px;
+    left: 0;
     border-radius: 50%;
     filter: blur(70px);
     z-index: -1;
     position: absolute;
   }
+
   &::after {
     content: ' ';
     width: 150px;
     height: 150px;
     background-color: $cyan;
     top: 150%;
-    right: 0px;
+    right: 0;
     border-radius: 50%;
     filter: blur(100px);
     z-index: -1;
