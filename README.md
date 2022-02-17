@@ -24,7 +24,7 @@
 
 ## Video presentation
 
-- 
+- [Click here to see my video about this project!](https://www.loom.com/share/09b0c650b1d247cab77e4167a0104bd3)
 
 ## Getting Started
 
