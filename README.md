@@ -12,7 +12,7 @@
 ## Built With
 
 - HTML, CSS
-- SASS
+- SASS (.scss)
 - React
 - Font Awesome
 - [Financial modeling prep API](https://site.financialmodelingprep.com/developer/docs)
